@@ -1,0 +1,11 @@
+.top{
+    display: flex;
+}
+.item1,.item3{
+    flex:3;
+    background-color: blueviolet;
+}
+.item2{
+    flex:6;
+    background-color: aqua;
+}
