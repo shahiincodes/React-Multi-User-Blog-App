@@ -1,0 +1,12 @@
+.home{
+    display: flex;
+}
+.posts{
+    flex:9;
+    height: 300 px;
+    width: 300px;
+    background-color: aqua;
+}
+.sidebar{
+    flex:3
+}

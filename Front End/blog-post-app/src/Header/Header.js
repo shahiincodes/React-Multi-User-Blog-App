@@ -8,8 +8,8 @@ const Header = () => {
         <div className='headerTitles'>
             <span>React and Node</span>
             <span>Blog</span>
+            <img src={img} className='headerImage' alt="" />
         </div>
-        <img src={img} alt="" />
     </div>
   )
 }
