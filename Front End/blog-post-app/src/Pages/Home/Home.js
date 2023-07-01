@@ -1,6 +1,7 @@
 import React from 'react'
 import "./home.css"
-import Sidebar from '../../Sidebar/Sidebar'
+import Sidebar from '../../components/Sidebar/Sidebar'
+import Posts from '../../components/Posts/Posts'
 
 
 function Home() {
@@ -8,7 +9,7 @@ function Home() {
     <>
     <div className='home'>
       <div className="posts">
-        posts here
+        <Posts />
       </div>
       <div className="sidebar">
         <Sidebar/>
