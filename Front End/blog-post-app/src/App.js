@@ -1,13 +1,14 @@
-import Header from "./components/Header/Header";
+
 import Top from "./components/Top/Top";
-import WritePost from "./Pages/WritePost/WritePost";
+import Profile from "./Pages/Profile/Profile";
+
 
 function App() {
   return (
     <div className="App">
       <Top />
-      <Header />
-      <WritePost/>
+      
+      <Profile/>
     </div>
   );
 }

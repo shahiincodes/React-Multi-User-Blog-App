@@ -1,0 +1,9 @@
+.profile{
+    display: flex;
+}
+.update{
+    flex:9;
+}
+.delete{
+    flex:3
+}
