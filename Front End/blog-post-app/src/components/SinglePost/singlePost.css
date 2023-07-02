@@ -5,30 +5,52 @@
     width: 100%;
     height: 400px;
     object-fit: fill;
-    border-radius:.3rem;
+    border-radius:.5rem;
+    opacity: .8;
 
+}
+.postDetails{
+    line-height: 30px;
+    font-size: 20px;
+    margin: 25px 5px 40px 49px;
+    color: steelblue;
+}
+.postDetails::first-letter{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-left: 70px;
+}
+
+.editdelete{ 
+    float: right;
+    margin-right: 15px;
+    font-size: 20px;
+    
 }
 .editdeleteIcon{
-    margin:10px;
+    cursor: pointer;
 }
-
-
-.postDetails{
-    text-align: center;
-    line-height:25px;
-    font-size: 20px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+.editIcon{
+    color:teal
 }
-.singlePostWrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.deleteIcon{
+    color:rgb(224, 14, 31);
+    margin-left: 15px;
 }
 .postTitle{
-    margin-top: 25px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 40px;
 }
-.editdelete{
-    cursor: pointer;
+.author{
+    margin-top: 15px;
+    color: cadetblue;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.authordetail{
+    display: flex;
+    justify-content: space-between;
 }

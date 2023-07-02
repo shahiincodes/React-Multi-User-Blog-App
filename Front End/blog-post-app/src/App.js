@@ -1,13 +1,13 @@
 import Header from "./components/Header/Header";
 import Top from "./components/Top/Top";
-import Single from "./Pages/single/Single";
+import WritePost from "./Pages/WritePost/WritePost";
 
 function App() {
   return (
     <div className="App">
       <Top />
       <Header />
-      <Single/>
+      <WritePost/>
     </div>
   );
 }
