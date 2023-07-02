@@ -1,0 +1,78 @@
+.writePost{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.writePost img{
+    width: 70vw;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 10px;
+}
+.formGroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    
+}
+.writePostForm{
+    width: 70vw;
+    margin-top: 20px;
+    background-color: rgba(223, 229, 235, 0.349);
+    border: 1px solid rgb(78, 72, 72);
+    border-radius: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:70%;
+}
+.formGroup:first-child{
+    margin-top: 15px;
+}
+
+.postInput{
+    font-style: oblique;
+    padding:5px;
+    border-radius: 15px;
+    border: none;
+    outline: none; 
+      
+}
+
+.addIcon{
+width: 25px;
+height: 25px;
+border: 2px solid grey;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+margin-right: 15px;
+}
+.addIcon:hover{
+    background-color: rgb(203, 205, 206);
+}
+.submitPost{
+    
+    position: absolute;
+    top: 392px;
+    padding: 10px;
+    width: 115px;
+    background-color: silver;
+    border-radius: 20px;
+    right: 20px;
+
+
+
+}
+.submitPost:hover{
+    background-color: rgb(167, 163, 163);
+}
