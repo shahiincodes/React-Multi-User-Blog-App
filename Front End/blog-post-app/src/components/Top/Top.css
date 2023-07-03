@@ -7,7 +7,9 @@
     align-items: center;
     position: sticky;
     top:0px;
-    background-color: rgba(128, 128, 128, 0.952);
+    background-color: rgba(97, 93, 93, 0.89);
+    z-index: 1;
+    color:white
     
 }
 .socialIcons{

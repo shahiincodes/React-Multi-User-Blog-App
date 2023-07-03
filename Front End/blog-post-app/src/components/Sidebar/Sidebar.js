@@ -7,11 +7,11 @@ function Sidebar() {
     <>
       <div className="sidebar">
         <div className="sidebarItem">
-          <span className="sidebarTitle">ABOUT US</span>
+          <span className="sidebarTitle">BEST ARTICLE</span>
           <img src={img} alt="" />
           <p>
             Lorem s cumque ipsam, quaerat rerum, impedit ex deserunt eum
-            temporibus!
+            temporibus!lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, veniam.
           </p>
         </div>
         <div className="sidebarItem">

@@ -3,9 +3,9 @@
 }
 .singlePostImage{
     width: 100%;
-    height: 400px;
+    height: 350px;
     object-fit: fill;
-    border-radius:.5rem;
+    border-radius:5px;
     opacity: .8;
 
 }

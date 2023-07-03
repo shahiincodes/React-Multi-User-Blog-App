@@ -5,10 +5,8 @@
     align-items: center;
     font-size: larger;
 }
-.headerTitles .headerImage{
+.headerImage{
     width: 100%;
     height: 400px;
     object-fit: fill;
-    border-bottom: 3px dotted grey;
-
 }

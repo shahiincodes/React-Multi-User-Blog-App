@@ -16,7 +16,7 @@ import WritePost from "./Pages/WritePost/WritePost";
 
 function App() {
 
-  const user = false;
+  const user = true;
 
   return (
     <>

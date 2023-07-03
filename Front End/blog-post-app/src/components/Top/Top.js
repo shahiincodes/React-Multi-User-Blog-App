@@ -4,7 +4,7 @@ import img from "./16824922819521671634744497WIN_20220817_17_10_30_Pro.jpg";
 import { Link } from "react-router-dom";
 
 function Top() {
-  const user = false;
+  const user = true;
   return (
     <div className="top">
       <div className="item1">
@@ -36,14 +36,8 @@ function Top() {
               WRITE BLOG
             </Link>
           </li>
-          {/* {user?<li className="topItems">
-            <Link className="link" to={"/register"}>
-              SIGN UP
-            </Link>
-          </li>:""}
-           */}
            {user&& <li className="topItems">
-            lOG OUT
+            LOG OUT
           </li>}
 
           {user&&<li className="topItems">

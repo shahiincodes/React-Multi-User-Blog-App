@@ -1,7 +1,7 @@
 
 .sidebar{
     flex: 3;
-    background-color: rgba(128, 128, 128, 0.171);
+    background-color: rgba(153, 148, 148, 0.089);
 }
 .sidebarItem{
     display: flex;
@@ -36,7 +36,7 @@
 .sidebarItem > img{
     width:94%;
     height: 200px;
-    object-fit: fill;
+    object-fit: cover;
 }
 .sidebarItem > p{
     text-align: center;
