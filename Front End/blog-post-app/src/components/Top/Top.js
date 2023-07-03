@@ -20,7 +20,7 @@ function Top() {
           <li className="topItems">write post</li>
           <li className="topItems">Contact</li>
           <li className="topItems">
-          <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-user"></i>
           </li>
         </ul>
       </div>

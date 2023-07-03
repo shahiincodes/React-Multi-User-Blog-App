@@ -1,9 +1,79 @@
 .profile{
     display: flex;
 }
-.update{
+.updateWraper{
     flex:9;
 }
-.delete{
+.update{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputPP{
+    margin-top: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formWrapper > li{
+    margin-top: 10px;
+    display: flex;
+    margin-left: 20px;
+    padding: 10px;
+    
+}
+.formWrapper >li> input{
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid #3635355b;
+}
+.formWrapper >li> label{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.updateBtn{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: teal;
+    border-radius: 15px;
+    width: 150px;
+    cursor: pointer;
+    color: aliceblue;
+}
+.updateBtn:hover{
+    background-color: rgba(8, 148, 148, 0.596);
+    color:black
+}
+.imgContainer > img{
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: fill;
+}
+.update > span{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sidebar{
     flex:3
 }
