@@ -1,13 +1,14 @@
 
 import Top from "./components/Top/Top";
-import Register from "./Pages/Register/Register";
+import LogIn from "./Pages/LogIn/LogIn";
+
 
 
 function App() {
   return (
     <div className="App">
       <Top/>
-      <Register/>
+      <LogIn/>
     </div>
   );
 }
