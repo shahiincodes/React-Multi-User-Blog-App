@@ -1,0 +1,45 @@
+
+.register{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url('./1682068265322DSCF0412.JPG');
+    background-size: cover;
+}
+.formtitle{
+   font-size: 30px;
+   font-weight: bold;
+   font-style: italic;
+   border-bottom: 1px solid grey;
+   margin-bottom: 85px;
+}
+.registerForm{
+    
+    width: 30vw;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.registerForm>input{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    width: 100%;
+    border: none;
+}
+.btn{
+    width: 70px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10%;
+    background-color: #fff;
+}
+.btn:hover{
+    background-color: rgba(97, 95, 95, 0.514);
+    color: white;
+}

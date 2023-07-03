@@ -14,7 +14,7 @@ const Profile = () => {
         <div className="imgContainer">
           <img src={img} alt="" />
           <label htmlFor="inputPP">
-          <i class="inputPP fa-sharp fa-solid fa-user"></i>
+          <i class=" inputPP fa-sharp fa-solid fa-user-plus"></i>
           </label>
           <input type="file"  id="inputPP" style={{display:"none"}} />
         </div>

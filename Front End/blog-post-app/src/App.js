@@ -1,14 +1,13 @@
 
 import Top from "./components/Top/Top";
-import Profile from "./Pages/Profile/Profile";
+import Register from "./Pages/Register/Register";
 
 
 function App() {
   return (
     <div className="App">
-      <Top />
-      
-      <Profile/>
+      <Top/>
+      <Register/>
     </div>
   );
 }
