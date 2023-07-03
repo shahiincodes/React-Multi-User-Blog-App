@@ -1,8 +1,10 @@
 import React from "react";
 import "./Top.css";
 import img from "./16824922819521671634744497WIN_20220817_17_10_30_Pro.jpg";
+import { Link } from "react-router-dom";
 
 function Top() {
+  const user = false;
   return (
     <div className="top">
       <div className="item1">
@@ -14,20 +16,47 @@ function Top() {
       </div>
       <div className="item2">
         <ul>
-          <li className="topItems">Home</li>
-          <li className="topItems">About</li>
-          <li className="topItems">Blogs</li>
-          <li className="topItems">write post</li>
-          <li className="topItems">Contact</li>
           <li className="topItems">
-              <i class="fa-solid fa-user"></i>
+            <Link className="link" to={"/"}>
+              HOME
+            </Link>
           </li>
+          <li className="topItems">
+            <Link className="link" to={"/about"}>
+              ABOUT
+            </Link>
+          </li>
+          <li className="topItems">
+            <Link className="link" to={"/single"}>
+              SINGLE
+            </Link>
+          </li>
+          <li className="topItems">
+            <Link className="link" to={"/write-post"}>
+              WRITE BLOG
+            </Link>
+          </li>
+          {/* {user?<li className="topItems">
+            <Link className="link" to={"/register"}>
+              SIGN UP
+            </Link>
+          </li>:""}
+           */}
+           {user&& <li className="topItems">
+            lOG OUT
+          </li>}
+
+          {user&&<li className="topItems">
+            <Link className="link" to={"/profile"}>
+              <i class="fa-solid fa-user"></i>
+            </Link>
+          </li>}
         </ul>
       </div>
       <div className="item3">
-        <img src={img} alt="" />
-        <input type="text" />
-        <i class="searchIcon fa-solid fa-magnifying-glass"></i>
+        {user&&<img src={img} alt="" />}
+        <input className="searchInput" type="text" />
+        <i className="searchIcon fa-solid fa-magnifying-glass"></i>
       </div>
     </div>
   );

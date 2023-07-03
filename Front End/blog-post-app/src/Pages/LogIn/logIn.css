@@ -26,12 +26,13 @@
     align-items: center;
 }
 .logInForm>input{
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 10px;
     border-radius: 15px;
     width: 100%;
     border: none;
 }
+
 .btn{
     width: 70px;
     padding: 5px;
@@ -49,6 +50,6 @@
     right: 70px;
     width: 110px;
     padding: 10px;
-    background-color: #e3a297;
+    background-color: #ddb5ae;
     font-size: 19px;
 }

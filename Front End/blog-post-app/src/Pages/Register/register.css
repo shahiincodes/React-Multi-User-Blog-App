@@ -26,18 +26,28 @@
     align-items: center;
 }
 .registerForm>input{
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 10px;
     border-radius: 15px;
     width: 100%;
     border: none;
 }
+.btnRegister{
+    position: absolute;
+    top: 91px;
+    right: 70px;
+    width: 110px;
+    padding: 10px;
+    background-color: #857775;
+    font-size: 19px;
+}
+
 .btn{
-    width: 70px;
-    padding: 5px;
+    width: 80px;
+    padding: 9px;
     margin: 10px;
     border-radius: 10%;
-    background-color: #fff;
+    background-color: teal;
 }
 .btn:hover{
     background-color: rgba(97, 95, 95, 0.514);

@@ -50,6 +50,16 @@
 .item3 input{
     padding: 8px; 
 }
-.searchIcon:hover{
+.searchInput{
+    padding: 5px;
+    border-radius: 15px;
+    width: 250px;
+}
+.searchIcon{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
