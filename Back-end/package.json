@@ -1,0 +1,20 @@
+{
+  "name": "reacr_blog_post",
+  "version": "1.0.0",
+  "description": "blog post app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Habibar Rahman",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.1",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7"
+  }
+}
