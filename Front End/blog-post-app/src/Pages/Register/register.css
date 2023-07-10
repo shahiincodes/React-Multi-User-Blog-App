@@ -43,13 +43,13 @@
 }
 
 .btn{
-    width: 80px;
+    width: 125px;
     padding: 9px;
     margin: 10px;
     border-radius: 10%;
     background-color: teal;
 }
 .btn:hover{
-    background-color: rgba(97, 95, 95, 0.514);
+    background-color: rgb(97, 95, 95);
     color: white;
 }

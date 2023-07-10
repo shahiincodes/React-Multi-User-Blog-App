@@ -8,11 +8,11 @@ function Top() {
   return (
     <div className="top">
       <div className="item1">
-        <i class="socialIcons fa-brands fa-instagram"></i>
-        <i class="socialIcons fa-brands fa-facebook"></i>
-        <i class="socialIcons fa-brands fa-linkedin"></i>
-        <i class="socialIcons fa-brands fa-twitter"></i>
-        <i class="socialIcons fa-brands fa-github"></i>
+        <i className="socialIcons fa-brands fa-instagram"></i>
+        <i className="socialIcons fa-brands fa-facebook"></i>
+        <i className="socialIcons fa-brands fa-linkedin"></i>
+        <i className="socialIcons fa-brands fa-twitter"></i>
+        <i className="socialIcons fa-brands fa-github"></i>
       </div>
       <div className="item2">
         <ul>
@@ -36,13 +36,15 @@ function Top() {
               WRITE BLOG
             </Link>
           </li>
-           {user&& <li className="topItems">
-            LOG OUT
-          </li>}
+          <li className="topItems">
+            <Link className="link" to={user?'/logout':'/register'}>
+              {user ? 'LOG OUT': 'REGISTER'}
+            </Link>
+          </li>
 
           {user&&<li className="topItems">
             <Link className="link" to={"/profile"}>
-              <i class="fa-solid fa-user"></i>
+              <i className="fa-solid fa-user"></i>
             </Link>
           </li>}
         </ul>

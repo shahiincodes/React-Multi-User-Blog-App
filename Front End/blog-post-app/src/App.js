@@ -16,7 +16,7 @@ import WritePost from "./Pages/WritePost/WritePost";
 
 function App() {
 
-  const user = true;
+  const user = false;
 
   return (
     <>
@@ -24,7 +24,7 @@ function App() {
       <Top/>
       <Routes>
         <Route path="/" element={user?<Home />:<Register/>}/>
-        <Route path="/logIn" element={user?<Home/>:<LogIn/>}/>
+        <Route path="/logIn" element={<LogIn/>}/>
         <Route path="/register" element={user?<Home/>:<Register/>}/>
         <Route path="/profile" element={user?<Profile/>:<Register/>}/>
         <Route path="/single" element={<Single/>}/>
