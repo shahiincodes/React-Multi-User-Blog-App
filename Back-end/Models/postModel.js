@@ -8,6 +8,12 @@ const postSchema = new mongoose.Schema({
         type:String,
         required:true,
         trim:true
+    },
+    userId:{
+        type:String,
+    },
+    category:{
+        type:Array
     }
 },{timestamps:true})
 module.exports = mongoose.model('Post',postSchema)

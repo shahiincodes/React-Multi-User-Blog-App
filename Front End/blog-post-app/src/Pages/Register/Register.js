@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import './register.css'
-import { Link } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import axios from 'axios'
 
 const Register = () => {
-
+const [error,setError] = useState(false)
 const [user,setUser] = useState({
   name:'',
   email:'',
@@ -17,28 +17,32 @@ const handleChange = (e)=>{
     return {...prev,[e.target.name]:e.target.value}
   })
 }
-const postUser = (e)=>{
+const postUser = async (e)=>{
   e.preventDefault()
-  console.log(user)
-  axios.post('http://localhost:3001/register',user).then((res)=>{
-    console.log('user saved from react'+res.data).catch((err)=>console.log(err.message))
-  })
+  try {
+    await axios.post('http://localhost:3001/register',user).then((res)=>{
+      res.data && window.location.replace('/logIn')
+    })
+  } catch (error) {
+    setError(true)
+  }
 }
   return (
     <div className='register'>
         <span className='formtitle'>Register</span>
-        <form className='registerForm'>
+        <form className='registerForm' onSubmit={postUser}>
             <label>User Name</label>
-            <input type="text" className='username' name='name' value={user.name} onChange={handleChange} placeholder='Enter your name'/>
+            <input type="text" className='username' name='name' value={user.name} onChange={handleChange} placeholder='Enter your name'required/>
             <label>Email</label>
-            <input type="email" className='userEmail' name='email' value={user.email} onChange={handleChange} placeholder='Enter your Email' />
+            <input type="email" className='userEmail' name='email' value={user.email} onChange={handleChange} placeholder='Enter your Email' required/>
             <label>Set password</label>
-            <input type="password" className='userPass' name='password' value={user.password} onChange={handleChange} placeholder='Set Password' />
-            <button className="btn" type='submit' onClick={postUser} >Sign Up</button>
+            <input type="password" className='userPass' name='password' value={user.password} onChange={handleChange} placeholder='Set Password' required/>
+            <button className="btn" type='submit' >Sign Up</button>
         </form>
         <button className='btnRegister btn'>
           <Link className='link btn' to={'/logIn'} >LOG IN</Link>
         </button>
+        {error && <h4 style={{color:'red',marginTop:'15px'}}>Something went wrong</h4>}
     </div>
   )
 }
