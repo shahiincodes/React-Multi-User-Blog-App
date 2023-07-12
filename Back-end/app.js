@@ -7,9 +7,9 @@ const cookieParser = require('cookie-parser')
 
 env.config()
 const router = require('./Routes/auth')
-const updatePostRoute = require('./Routes/updatePost')
-const deletePostRoute = require("./Routes/deletePost")
-const createPostRoute = require("./Routes/createPostRoute")
+const postRoutes = require('./Routes/postRoutes')
+const userRoutes = require('./Routes/userRoutes')
+const categoryRoutes = require('./Routes/categoryRoutes')
 
 //connecting Mongodb
 mongoose.connect(process.env.MONGO_CONNECTION,{useNewUrlParser:true,useUnifiedTopology:true}).then(()=>console.log('Db connected succsessfully'))
@@ -18,9 +18,10 @@ mongoose.connect(process.env.MONGO_CONNECTION,{useNewUrlParser:true,useUnifiedTo
 app.use(cors())
 app.use(express.json())
 app.use(router)
-app.use(createPostRoute)
-app.use('/update/:id',updatePostRoute)
-app.use('/delete/:id',deletePostRoute)
+app.use(postRoutes)
+app.use(userRoutes)
+app.use(categoryRoutes)
+
 
 app.use(cookieParser())
 app.listen(process.env.PORT,()=>console.log(`Server started at port ${process.env.PORT}`))
