@@ -1,29 +1,12 @@
+const createCategory = require('../Controllers/createCategory')
 const categoryModel = require('../Models/categoryModel')
+const getCategory = require('../Controllers/getCategory')
 
 const router = require('express').Router()
 //Get all category
-router.get('/all-category',async(req,res)=>{
-    try {
-        const allCategories = await categoryModel.find({})
-        res.json(allCategories)
-    } catch (error) {
-        res.json(error)
-    }
-})
+router.get('/all-category',getCategory)
 //Create a category
-router.post('/create-category',async(req,res)=>{
-    try {
-        const category = new categoryModel({
-            name:req.body.name,
-            userId:req.body.userId,
-            
-        })
-        await category.save()
-        res.status(201).json(category)
-    } catch (error) {
-        res.status(400).json(error)
-    }
-})
+router.post('/create-category',createCategory)
 
 //Delete a category
 router.delete('/delete-category/:id',async(req,res)=>{
