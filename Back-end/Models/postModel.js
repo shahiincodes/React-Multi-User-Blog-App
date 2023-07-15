@@ -9,6 +9,9 @@ const postSchema = new mongoose.Schema({
         required:true,
         trim:true
     },
+    photo:{
+        type:String,
+    },
     userId:{
         type:String,
     },

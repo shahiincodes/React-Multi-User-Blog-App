@@ -28,11 +28,11 @@ function Sidebar() {
         <div className="sidebarItem">
           <span className="sidebarTitle">FOLLOW US</span>
           <div className="sidebarIcons">
-            <i class="sidebarIcon fa-brands fa-instagram"></i>
-            <i class="sidebarIcon fa-brands fa-facebook"></i>
-            <i class="sidebarIcon fa-brands fa-linkedin"></i>
-            <i class="sidebarIcon fa-brands fa-twitter"></i>
-            <i class="sidebarIcon fa-brands fa-github"></i>
+            <i className="sidebarIcon fa-brands fa-instagram"></i>
+            <i className="sidebarIcon fa-brands fa-facebook"></i>
+            <i className="sidebarIcon fa-brands fa-linkedin"></i>
+            <i className="sidebarIcon fa-brands fa-twitter"></i>
+            <i className="sidebarIcon fa-brands fa-github"></i>
           </div>
         </div>
       </div>

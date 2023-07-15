@@ -11,12 +11,13 @@ import Register from "./Pages/Register/Register";
 import Profile from "./Pages/Profile/Profile";
 import Single from "./Pages/Single/Single";
 import WritePost from "./Pages/WritePost/WritePost";
+import AllPosts from "./Pages/AllPosts/AllPosts";
 
 
 
 function App() {
 
-  const user = false;
+  const user = true;
 
   return (
     <>
@@ -25,6 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={user?<Home />:<Register/>}/>
         <Route path="/logIn" element={<LogIn/>}/>
+        <Route path="/all-posts" element={<AllPosts/>}/>
         <Route path="/register" element={user?<Home/>:<Register/>}/>
         <Route path="/profile" element={user?<Profile/>:<Register/>}/>
         <Route path="/single" element={<Single/>}/>

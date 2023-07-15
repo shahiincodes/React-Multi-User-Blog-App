@@ -19,11 +19,11 @@ function Top() {
           <li className="topItems">
             <Link className="link" to={"/"}>
               HOME
-            </Link>
+            </Link> 
           </li>
           <li className="topItems">
-            <Link className="link" to={"/about"}>
-              ABOUT
+            <Link className="link" to={"/all-posts"}>
+              All POSTS
             </Link>
           </li>
           <li className="topItems">
