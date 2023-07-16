@@ -1,15 +1,14 @@
 import React from 'react'
 import Post from '../Post/Post'
 
-function Posts() {
+function Posts({posts}) {
   return (
     <div className='posts'>
-      <Post/>
-      <Post/>
-      <Post/>
-      <Post/>
-      <Post/>
-      <Post/>
+      {posts.map((post)=>{
+       return <Post post = {post} key={post._id}/>
+      })
+      }
+      
     </div>
   )
 }

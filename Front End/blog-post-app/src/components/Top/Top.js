@@ -27,11 +27,6 @@ function Top() {
             </Link>
           </li>
           <li className="topItems">
-            <Link className="link" to={"/single"}>
-              SINGLE
-            </Link>
-          </li>
-          <li className="topItems">
             <Link className="link" to={"/write-post"}>
               WRITE BLOG
             </Link>

@@ -19,7 +19,15 @@ router.post('/create-post',async(req,res)=>{
         res.status(400).json(error)
     }
 })
-
+//Get a single post
+router.get('/posts/:postId',async (req,res)=>{
+    try {
+       const post= await postModel.findOne({_id:req.params.postId})
+       res.json(post)
+    } catch (error) {
+        res.json(error.message)
+    }
+})
 //Delete a post
 router.delete('/delete-post/:id',async(req,res)=>{
     try {

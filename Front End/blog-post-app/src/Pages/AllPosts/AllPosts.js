@@ -1,13 +1,14 @@
 import React from 'react'
 import Post from '../../components/Post/Post'
+import './allPosts.css'
 
-function AllPosts() {
+function AllPosts({posts}) {
   
   return (
     <div className='all-posts'>
-     
-        <Post />
-      
+        {posts.map((post)=>{
+          return <Post post={post} key={post._id}/>
+        })}
     </div>
   )
 }

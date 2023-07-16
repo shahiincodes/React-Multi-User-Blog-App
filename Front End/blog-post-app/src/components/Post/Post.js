@@ -1,18 +1,24 @@
 import React from 'react'
 import "./post.css"
-import img from "./1681750909346IMG_1460.JPG"
+
+import { Link } from 'react-router-dom'
 
 function Post({post}) {
   return (
     <>
     <div className='post'>
-        <img src={img} alt="" />
+      <Link className='link' to={`/posts/${post._id}`}>
+        {post.photo && (
+          <img src={post.photo} alt="" />
+
+        )}
         <div className="postInfo">
             <span className="postCat">Music</span>
             <span className="postCat">Life</span>
         </div>
-        <h1>{post.title}</h1>
+        <h1 className='postTitle'>{post.title}</h1>
         <p className='postDetail'>{post.content}</p>
+      </Link>
     </div>
     </>
   )

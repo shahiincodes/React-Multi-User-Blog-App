@@ -1,9 +1,14 @@
 .post{
-    width: 32%;
+    width: 28%;
     margin: 5px;
     border-bottom: 1px solid gray;
     background-color: rgba(231, 238, 238, 0.664);
     overflow: hidden;
+}
+.postTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .postInfo{
     display: flex;
